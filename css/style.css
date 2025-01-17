@@ -154,7 +154,7 @@ div[class$="__text"],
   align-items: center;
   justify-content: flex-start;
 
-  min-height: 180vh;
+  min-height: 250vh;
   position: relative;
   /* 横幅をフィットさせる */
   min-width:fit-content; 
@@ -163,6 +163,7 @@ div[class$="__text"],
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
+  margin-top: 10rem;
 }
 
 /* conC */
@@ -183,8 +184,8 @@ div[class$="__text"],
 /* conE */
 
 
-.conE{
-  min-height: 160vh;
+.conE__image{
+  min-height: 400vh;
   background-image:url(../img/history.png);
   background-repeat: no-repeat;
   background-position: center top;
@@ -199,7 +200,7 @@ div[class$="__text"],
 /* --------------------------------- */
 /* conF */
 
-.conF{
+.conF__image{
   min-height: 180vh;
   background-image: url(../img/pro.png);
   background-repeat: no-repeat;
