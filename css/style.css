@@ -19,7 +19,7 @@ body {
     font-size: 16px;
     letter-spacing: 0.1rem;
     background-color: var(--main-color);
-    color: var(--dark-main-color);
+    color: var(--accent-color);
 }
 
 .container {
@@ -69,6 +69,13 @@ div[class$="__text"],
 
 /* --------------------------------- */
 /* header */
+
+/* スクロールしたらヘッダーメニューのフォントカラー変更 */
+.headerColorScroll {
+  background:var(--accent-color)!important;
+  transition: color 0.4s ease-out;
+}
+
 
 .header {
     position: absolute;
@@ -172,16 +179,6 @@ div[class$="__text"],
 /* --------------------------------- */
 /* conD */
 
-.conD__image {
-  min-height: 100vh;
-  background-image:url(../img/history.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100%;
-  object-fit: cover;
-  padding-bottom: 80%;
-}
-
 /* conD */
 /* --------------------------------- */
 /* conE */
@@ -204,14 +201,31 @@ div[class$="__text"],
 /* conF */
 
 .conF__image{
-  min-height: 100vh;
+  min-height: 40vh;
   background-image: url(../img/pro.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
   object-fit: cover;
-  padding-bottom: 30%;
+  margin-bottom: 3rem;
 }
+
+.conF__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pro{
+  width: 30%;
+  margin-right: 3rem;
+}
+
+.pro:last-child{
+  margin-right: 0;
+}
+
+
 
 /* conF */
 /* --------------------------------- */
@@ -246,7 +260,7 @@ div[class$="__text"],
 /* --------------------------------- */
 /* conI */
 
-.conI__image{
+.conI{
   min-height: 100vh;
   background-image: url(../img/event.png);
   background-repeat: no-repeat;
@@ -261,6 +275,8 @@ div[class$="__text"],
 
 
 /* hamburger */
+
+
 
 .hamburger .btn-gNav {
   position: fixed;
@@ -366,6 +382,7 @@ div[class$="__text"],
   padding: 1rem 2rem;
 }
 
+
 /* hamburger */
 /* --------------------------------- */
 
@@ -382,12 +399,19 @@ div[class$="__text"],
   background-position: center bottom;
   background-size: 100%;
   object-fit: cover;
-
+  position: relative;
   width: 100%;
   height: auto;
   bottom: 0; /*下に固定*/
-  margin-top: 3rem;
-  background-color: var(--text-bright-color);
+  margin-top: 0%;
+}
+
+
+
+.foot__image{
+  position: absolute;
+  top:77%;
+  left:62%
 }
 
 
@@ -426,108 +450,77 @@ div[class$="__text"],
 }
 
 
-.conB__image{
-  top: 50%;
-}
-
-.conB__box{
-  height: 500px;
-  margin-bottom: 10rem;
-}
-
 .conC{
   min-height: 200px;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
-.conD__image{
-  height: 100vh;
-  margin-top: 3rem;
-  margin-bottom: -30rem;
-}
+
 .conE{
-  margin-top: -30rem;
-}
-
-.conE .container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.conE__list{
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 195px;
+  min-height: 100vh;
+  background-image: url(../img/history__phone.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 40%;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  padding-bottom: 220%;
 }
 
 .conE__image{
-  height: 10rem;
-  width: 10rem;
-  margin: 0 auto;
+  display: none;
 }
 
-.conE__list :nth-child(even) {
-  display:block;
+.conF__box{
+  display: block;
+  
 }
 
-
-.conF__image {
-  height: 48vh;
-  min-height: 450px;
-}
-
-.conF__image2{
-  height: 48vh;
-  min-height: 450px;
+.pro{
+  width: 100%;
+  margin-bottom: 3rem;
 }
 
 .conG{
-  margin-top: -10rem;
-}
-
-.conG__image{
-  min-height: 650px;
-  margin-bottom: -25rem;
+  padding: 0;
+  margin-bottom: -15rem;
 }
 
 .conH {
-  min-height: 200px;
+  min-height: 100vh;
+  background-image:url(../img/eat.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  object-fit: cover;
 }
 
-.conH__text{
-  width: 80%;
-  position: absolute;
-  top: 7%;
-  left: 50%;
-}
-
-.conH__image{
-  position: relative;
+.conH__image {
+  display: none;
 }
 
 .conI{
-  margin-top: 5rem;
+  padding-bottom: 0;
 }
 
-.conI__image,
-.conI__box2 {
-  margin: 0;
-}
 
-.more__btn{
-  width: 170px;
-}
 
+  
+
+/* --------------------------------- */
+/* header */
+  
 .conA{
   background-image: url(../img/top.png);
   width: 100%;
   height: auto;
   min-height: 700px;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: 100%;
-  background-attachment: fixed;
 }
+
 .conA::before{
   background:none;
 }
@@ -536,23 +529,35 @@ div[class$="__text"],
   width: 100%;
 }
 
-  
-
-/* --------------------------------- */
-/* header */
-  
-
+.hamburger .btn-gNav span {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background:var(--accent-color);
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
+
 
 /* header */
  /* --------------------------------- */
   /* footer */
 
-  
+.footer{
+  min-height: 13vh;
+} 
+
+.foot__image{
+  width: 30%;
+  top:47%;
+}
 
 
 /* footer */
 /* --------------------------------- */
+}
+
 
 /* ------------------------ */
 /* タブレットのときの制御 */
@@ -589,9 +594,6 @@ div[class$="__text"],
   p {
       font-size: 18px;
   }
-
-
-
 
 
 }

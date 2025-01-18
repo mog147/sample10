@@ -1,7 +1,5 @@
 
 // hamburger
-if(window.matchMedia("(max-width: 768px)").matches){
-    // ウィンドウサイズが 768px以下の場合のコードをここに
 
       $(".btn-gNav").click(function(){
         if($(".gnav").hasClass("open")){ // クリックされた要素がopenクラスだったら
@@ -15,4 +13,27 @@ if(window.matchMedia("(max-width: 768px)").matches){
         $(this).removeClass("open");
       });
 
-  }
+
+// スクロールするとicon色変更
+if (window.matchMedia("(min-width: 768px)").matches) {
+
+
+$(function () {
+
+  $(window).on("scroll", function () {
+    const sliderHeight = $(".conB").height();
+
+      if (sliderHeight - 30 < $(this).scrollTop()) {
+
+        $(".js-header").addClass("headerColorScroll");
+
+      } else {
+
+        $(".js-header").removeClass("headerColorScroll");
+
+      }
+
+    });
+
+  })
+};
