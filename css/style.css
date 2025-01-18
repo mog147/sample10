@@ -121,11 +121,12 @@ div[class$="__text"],
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 120vh;
+    height: 100vh;
     background-image:url(../img/top__pc.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
+    padding-bottom: 10%;
 }
 
 /* conA */
@@ -154,7 +155,7 @@ div[class$="__text"],
   align-items: center;
   justify-content: flex-start;
 
-  min-height: 250vh;
+  min-height: 100vh;
   position: relative;
   /* 横幅をフィットさせる */
   min-width:fit-content; 
@@ -164,6 +165,7 @@ div[class$="__text"],
   background-position: center top;
   background-size: 100%;
   margin-top: 10rem;
+  padding-bottom: 45%;
 }
 
 /* conC */
@@ -171,12 +173,13 @@ div[class$="__text"],
 /* conD */
 
 .conD__image {
-  min-height: 120vh;
+  min-height: 100vh;
   background-image:url(../img/history.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
   object-fit: cover;
+  padding-bottom: 80%;
 }
 
 /* conD */
@@ -185,13 +188,13 @@ div[class$="__text"],
 
 
 .conE__image{
-  min-height: 400vh;
+  min-height: 100vh;
   background-image:url(../img/history.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
   object-fit: cover;
-  margin-bottom: 10rem;
+  padding-bottom: 120%;
 }
 
 
@@ -201,63 +204,41 @@ div[class$="__text"],
 /* conF */
 
 .conF__image{
-  min-height: 180vh;
+  min-height: 100vh;
   background-image: url(../img/pro.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100%;
   object-fit: cover;
-
+  padding-bottom: 30%;
 }
 
 /* conF */
 /* --------------------------------- */
 /* conG */
 
-  .conG__image{
-    min-height: 180vh;
-    background-image: url(../img/staff.png);
+  .conG{
+    min-height: 100vh;
+    background-image: url(../img/fun.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100%;
     object-fit: cover;
-
+    padding-bottom: 50%;
 }
 
 /* conG */
 /* --------------------------------- */
 /* conH */
 
-.conH {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  min-height: 750px;
-  position: relative;
-  /* 横幅をフィットさせる */
-  min-width:fit-content; 
-  text-align: center;
-  background-image:url(../img/about.png);
+.conH__image {
+  min-height: 100vhpx;
+  background-image:url(../img/eat.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-}
-
-.conH__image{
-  width: 50%;
-}
-.conH .title{
-  text-align: left!important;
-}
-
-.conH__text{
-  display: block;
-  text-align: left!important;
-}
-
-.conH__text p{
-  display: block;
-  text-align: left!important;
+  object-fit: cover;
+  padding-bottom: 200%;
 }
 
 
@@ -265,67 +246,16 @@ div[class$="__text"],
 /* --------------------------------- */
 /* conI */
 
-.conI__box{
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.conI__box2{
-  margin-top: -10rem;
-}
-
-.more__btn{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 5rem auto;
-  padding: 0;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 700;
-  border: 1px solid var(--dark-main-color);
-  border-radius: 10px;
-}
-
-
-.button04 a:hover {
-  color: var(--main-color);
-  text-decoration: none;
-  background-color:var(--dark-main-color);
-}
-
-.button04 a:hover::after {
-  border-top: 3px solid var(--dark-main-color);
-  border-right: 3px solid var(--dark-main-color);
-}
-
- p{
-  color: var(--dark-main-color);
-  font-family: "minion-pro", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-}
-
-
-.conI__box2 img {
-  width: 80%;
-}
-
-.img__wrap__l{
-  text-align:left;
-}
-
-.img__wrap__r{
-  text-align:right;
-}
-
 .conI__image{
-  width: 9%;
-  margin-right:8rem ;
+  min-height: 100vh;
+  background-image: url(../img/event.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  object-fit: cover;
+  padding-bottom: 100%;
 }
+
 /* conI */
 /* --------------------------------- */
 
@@ -442,30 +372,17 @@ div[class$="__text"],
 /* --------------------------------- */
 /*----- footer -----*/
 
-.sns__list{
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sns__item a {
-  text-decoration: none;
-  font-size: 42px;
-  color: var(--dark-main-color);
-}
-
-.sns__item:last-child a {
-  margin-right: 0;
-}
-
-.sns__item a:hover{
-    background-color:rgba(51,51,51,0.1) ;
-}
 
 
 .footer{
+
+  min-height: 100vh;
+  background-image: url(../img/foot.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  object-fit: cover;
+
   width: 100%;
   height: auto;
   bottom: 0; /*下に固定*/
@@ -473,32 +390,6 @@ div[class$="__text"],
   background-color: var(--text-bright-color);
 }
 
-.footA {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding-top: 3rem;
-  letter-spacing: 0.2rem;
-}
-
-.footA :first-child{
-  padding: 0 1rem;
-  margin: auto 0;
-}
-
-.footA a{
-  color: var(--dark-main-color);
-}
-
-.footA a+ a {
-  border-left: 1px solid var(--dark-main-color);
-  padding: 0 1ch;
-  margin: auto 0;
-}
-
-.footB{
-  text-align: center;
-}
 
 
 
